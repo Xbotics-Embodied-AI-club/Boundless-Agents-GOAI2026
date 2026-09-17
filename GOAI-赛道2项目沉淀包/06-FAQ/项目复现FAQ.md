@@ -6,7 +6,7 @@
 
 ## 为什么微信开发者工具提示 AppID 不可用？
 
-公开包默认使用 `touristappid`。游客模式只适合本地体验。真机、上传和发布需要替换为你自己的小程序 AppID。
+公开包中的 AppID 只是占位值，当前微信开发者工具可能直接返回“不存在此 AppID”或错误码 10。导入小程序前，请先注册自己的小程序并取得 AppID，或使用微信公众平台提供的测试号。Web Demo 不依赖 AppID，可作为零账号的本地复现路径。
 
 ## CloudBase 环境在哪里配置？
 
@@ -45,4 +45,3 @@ python3 scripts/build-robot-knowledge-base.py --source knowledge-source
 ## Demo现场网络失败怎么办？
 
 直接使用Web本地Demo，或播放录屏。演示时优先走固定输入，避免依赖临时网络和第三方模型状态。
-

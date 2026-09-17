@@ -221,7 +221,7 @@
 
 | Risk | Impact | Mitigation Strategy |
 |---|---|---|
-| 没有 AppID 无法真机发布 | Medium | 使用 `touristappid` 完成本地导入；README 说明替换步骤 |
+| 没有 AppID 无法编译或真机发布 | Medium | 使用本人注册的小程序 AppID 或官方测试号；暂未准备账号时先运行 Web Demo |
 | 模型或网络不可用 | High | 内置透明的规则版评估器和本地课程 |
 | 小屏知识地图拥挤 | Medium | 使用双列领域卡和独立详情页，不照搬 Web 画布 |
 | 规则误判自由表达 | Medium | 显示命中证据，允许重试；后续用受限模型增强，不改变门槛 |
@@ -264,15 +264,3 @@
 *Created: 2026-08-03*  
 *Status: Approved for implementation*  
 *Owner: 身知回响项目*
-
----
-## Handoff Context
-<!-- Machine-readable summary for the next workflow step. Do not delete; the next prompt in the workflow reads this block. -->
-- Stage: prd
-- App name: 身知回响微信小程序
-- User level: C
-- Target platform: WeChat native mini program
-- Budget: offline MVP has no incremental service cost; optional cloud/model usage later
-- Timeline: immediately deliver an importable local MVP; trial release after AppID is available
-- Source files: research-具身拼图.md → PRD-具身拼图-MVP.md → specs/wechat-mini-program-decisions.md → PRD-具身拼图微信小程序-MVP.md
----
